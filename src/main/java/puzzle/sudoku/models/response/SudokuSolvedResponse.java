@@ -21,14 +21,6 @@ public class SudokuSolvedResponse implements Serializable {
     @JsonIgnore
     private static final long serialVersionUID = 5425880735228975265L;
 
-    private int[][] solution;
-
-    public String solutionPrint(){
-        StringBuilder sb = new StringBuilder();
-        for (int i = 0; i < solution.length; i++) {
-            sb.append(Arrays.toString(this.getSolution()[i])).append(",\n");
-        }
-        return sb.toString();
-    }
+    private Integer[][] solution;
 
 }

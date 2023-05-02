@@ -22,6 +22,5 @@ public class SudokuSubmitRequest implements Serializable {
     private static final long serialVersionUID = -4165610349262056394L;
 
     @NotEmpty(message = "Please provide sudoku puzzle with 9 rows and 9 columns!")
-    @Size(min = 9, max = 9, message = "Sudoku must have {min} rows and {max} columns")
-    private int[][] puzzle;
+    private Integer[][] puzzle;
 }
