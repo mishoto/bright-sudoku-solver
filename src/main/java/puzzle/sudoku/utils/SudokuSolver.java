@@ -5,14 +5,14 @@ import org.springframework.stereotype.Component;
 @Component
 public class SudokuSolver {
 
-    public int[][] solveSudoku(int[][] submittedGrid) {
+    public Integer[][] solveSudoku(Integer[][] submittedGrid) {
         if(solver(submittedGrid)){
             return submittedGrid;
         }
-        return new int[1][1];
+        return new Integer[1][1];
     }
 
-    private boolean solver(int[][] grid) {
+    private boolean solver(Integer[][] grid) {
         for (int i = 0; i < 9; i++) {
             for (int j = 0; j < 9; j++) {
                 if (grid[i][j] != 0) {
@@ -34,7 +34,7 @@ public class SudokuSolver {
         return true; //if all cells are checked
     }
 
-    private boolean isValid(int[][] grid, int row, int col, int n) {
+    private boolean isValid(Integer[][] grid, int row, int col, int n) {
         for (int i = 0; i < 9; i++) {
             if (grid[i][col] != 0 && grid[i][col] == n) {
                 return false;
