@@ -14,15 +14,7 @@ public class MatrixValidator implements ConstraintValidator<ValidMatrix, Integer
 
     @Override
     public boolean isValid(Integer[][] matrix, ConstraintValidatorContext constraintValidatorContext) {
-        boolean isValid = isMatrixLengthEqualTo9(matrix) && areMatrixRowsLengthEqualTo9(matrix);
-        if(isValid){
-            constraintValidatorContext.disableDefaultConstraintViolation();
-            constraintValidatorContext.buildConstraintViolationWithTemplate("""
-                    my message
-                    """)
-                    .addConstraintViolation();
-        }
-        return isValid;
+        return isMatrixLengthEqualTo9(matrix) && areMatrixRowsLengthEqualTo9(matrix);
     }
 
     public boolean areMatrixRowsLengthEqualTo9(Integer[][] matrix){

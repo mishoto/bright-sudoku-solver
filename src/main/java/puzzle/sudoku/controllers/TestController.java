@@ -11,7 +11,6 @@ import puzzle.sudoku.models.request.SudokuSubmitRequestHv;
 import puzzle.sudoku.models.response.SudokuSolvedResponse;
 import puzzle.sudoku.services.UserService;
 
-
 @RestController
 public class TestController {
 
@@ -19,7 +18,6 @@ public class TestController {
 
     public TestController(UserService userService) {
         this.userService = userService;
-
     }
     @PostMapping(path = "/submit")
     public ResponseEntity<SudokuSolvedResponse> userSubmitHv(@Valid @RequestBody SudokuSubmitRequestHv sudokuSubmitRequestHv) {
