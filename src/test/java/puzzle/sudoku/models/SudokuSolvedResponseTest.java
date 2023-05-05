@@ -27,7 +27,7 @@ public class SudokuSolvedResponseTest {
     @Test
     void testResponseSerialization() throws IOException {
 
-        SudokuSolvedResponse serverResponsePayloadAsObject = new SudokuSolvedResponse(new int[][]{
+        SudokuSolvedResponse serverResponsePayloadAsObject = new SudokuSolvedResponse(new Integer[][]{
                 {5, 4, 6, 2, 1, 9, 8, 3, 7},
                 {9, 8, 7, 3, 6, 5, 1, 2, 4},
                 {3, 1, 2, 8, 7, 4, 6, 9, 5},

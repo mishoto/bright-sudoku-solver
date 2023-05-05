@@ -24,7 +24,7 @@ public class SudokuSubmitRequestTest {
     @Test
     void testRequestDeserialization() throws IOException {
 
-        SudokuSubmitRequest serverPostPayloadAsObject = new SudokuSubmitRequest(new int[][]{
+        SudokuSubmitRequest serverPostPayloadAsObject = new SudokuSubmitRequest(new Integer[][]{
                 {0, 0, 0, 2, 0, 9, 8, 3, 0},
                 {0, 0, 7, 3, 0, 0, 1, 0, 0},
                 {0, 1, 2, 0, 0, 0, 0, 0, 5},

@@ -1,6 +1,7 @@
 package puzzle.sudoku.controllers;
 
 import jakarta.validation.Valid;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -12,6 +13,7 @@ import puzzle.sudoku.models.response.SudokuSolvedResponse;
 import puzzle.sudoku.services.UserService;
 import puzzle.sudoku.validators.RequestBodyValidator;
 
+@Slf4j
 @RestController
 public class UserController {
 
