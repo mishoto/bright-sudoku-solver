@@ -29,7 +29,7 @@ public class UserServiceTest {
 
     @Test
     void checkIfSudokuSolveMethodIsCorrect(){
-        SudokuSubmitRequest sudokuSubmitRequest = new SudokuSubmitRequest(new int[][]{
+        SudokuSubmitRequest sudokuSubmitRequest = new SudokuSubmitRequest(new Integer[][]{
                 {9, 8, 4, 0, 0, 2, 0, 0, 0},
                 {2, 0, 7, 8, 0, 1, 6, 9, 0},
                 {0, 0, 0, 0, 0, 9, 0, 0, 0},
@@ -40,7 +40,7 @@ public class UserServiceTest {
                 {0, 0, 0, 7, 0, 0, 1, 5, 0},
                 {0, 0, 0, 0, 2, 0, 3, 0, 0}
         });
-        SudokuSolvedResponse sudokuSolvedResponse = new SudokuSolvedResponse(new int[][]{
+        SudokuSolvedResponse sudokuSolvedResponse = new SudokuSolvedResponse(new Integer[][]{
                 {9, 8, 4, 3, 6, 2, 5, 1, 7},
                 {2, 5, 7, 8, 4, 1, 6, 9, 3},
                 {6, 1, 3, 5, 7, 9, 2, 4, 8},
