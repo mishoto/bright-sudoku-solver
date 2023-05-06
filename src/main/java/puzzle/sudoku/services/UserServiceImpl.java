@@ -2,6 +2,7 @@ package puzzle.sudoku.services;
 
 import org.springframework.stereotype.Service;
 import puzzle.sudoku.models.request.SudokuSubmitRequest;
+import puzzle.sudoku.models.request.SudokuSubmitRequestHv;
 import puzzle.sudoku.models.response.SudokuSolvedResponse;
 import puzzle.sudoku.utils.SudokuSolver;
 
@@ -17,4 +18,11 @@ public class UserServiceImpl implements UserService{
     public SudokuSolvedResponse sudokuSolve(SudokuSubmitRequest sudokuSubmitRequest) {
         return new SudokuSolvedResponse(sudokuSolver.solveSudoku(sudokuSubmitRequest.getPuzzle()));
     }
+
+    @Override
+    public SudokuSolvedResponse sudokuSolveWithHv(SudokuSubmitRequestHv sudokuSubmitRequestHv) {
+        return new SudokuSolvedResponse(sudokuSolver.solveSudoku(sudokuSubmitRequestHv.getPuzzle()));
+    }
+
+
 }
